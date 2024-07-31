@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Candle Site</title>
+</head>
+
+<body>
+	<!-- ========== Start Section ========== -->
+	<div class="header">
+		<h2>Розрахунок ваги воску</h2>
+		<div class="header__container">
+
+			<div class="header__box">
+
+				<div class="header__Watter__g">
+					<label for="Watter__g">Вага води в ( г )</label>
+					<input type="text" class="form-control" name="Watter__g" id="Watter__g"
+						placeholder="Введи воду в ( г )....">
+				</div>
+
+				<div class="header__Wax__g">
+					<label for="Wax__g">Вага воску з аромамаслом в ( г )</label>
+
+					<span id="Wax__g" class="form-control"></span>
+				</div>
+
+			</div>
+			<div class="header__Watter__to__Wax__calc">
+				<button class="form-control" id="Watter__to__Wax__calc">Розрахувати</button>
+			</div>
+
+		</div><!--header__container-->
+	</div><!--header-->
+	<!-- ========== End Section ========== -->
+
+
+	<div class="main">
+		<h2>Розрахунок чистого воску без аромамасла</h2>
+
+		<div class="main__container">
+
+			<div class="main__box">
+				<div class="main__form__container">
+					<div class="main__Wax__w__AromaM">
+						<label for="Wax__w__AromaM">Вага воску з аромамаслом в ( г )</label>
+						<input type="text" class="form-control" name="Wax__w__AromaM" id="Wax__w__AromaM"
+							placeholder="Введіть масу воску з аромамаслом.....">
+					</div>
+
+					<div class="main__Prozent__AromaM">
+						<label for="Prozent__AromaM">Проценти аромамасла в ( % )</label>
+						<input type="text" class="form-control" name="Prozent__AromaM" id="Prozent__AromaM"
+							placeholder="Введіть проценти аромамасла.....">
+					</div>
+				</div>
+				<div class="main__Wax__and__AromaM__calc">
+					<button class="form-control" id="Wax__and__AromaM__calc">Розрахувати</button>
+				</div>
+
+			</div>
+
+		</div><!--main__container-->
+
+		<div class="main__result">
+			<div class="main__result__clear__Wax__without__AromaM">
+				<p>Чистий віск без аромамасла в ( г )</p>
+				<span id="clear__Wax__without__AromaM" class="form-control"></span>
+			</div>
+			<div class="main__result__clear__AromaM">
+				<p>Чиста вага аромамасла в ( г )</p>
+				<span id="clear__AromaM" class="form-control"></span>
+			</div>
+		</div><!--main__result-->
+
+		<div class="main__info">
+
+			<div class="main__info__head">
+				<h2 id="main__Candle__info"></h2>
+				<h2 id="main__Prozent__info"></h2>
+			</div>
+
+			<table class="table table-striped table-inverse table-responsive" id="main__info__table">
+				<tr>
+					<td>Скільки воску потрібно</td>
+					<td>Провірка</td>
+				</tr>
+				<tr>
+					<td ><span id="test__Wax"></span></td>
+					<td > <span id="test__All__Wax"></span></td>
+				</tr>
+				<tr>
+					<td colspan="2">Скільки потрібно аромамасла</td>
+				</tr>
+				<tr>
+					<td  colspan="2"> <span id="test__AromaM"></span></td>
+				</tr>
+			</table>
+		</div>
+
+
+
+
+	</div><!--main-->
+
+
+
+	<div class="footer">
+		<h2>Як залити за раз X свічок</h2>
+		<div class="footer__container">
+			<div class="footer__count">
+				<input type="text" class="form-control" id="footer__input__count"
+					placeholder="Введи кількість формочок....">
+			</div>
+			<button class="form-control" id="calc__X_Candle" style="width: 130px;">Розрахувати</button>
+		</div>
+		<h2 >Кількість воску X на X свічок</h2>
+
+		<div class="footer__calc__info">
+			<table class="table table-striped table-inverse table-responsive" id="footer__info__table">
+				<tr>
+					<td></td>
+					<td>На 1 свічку</td>
+					<td><span id="Candle_count">X</span> свічок</td>
+				</tr>
+
+				<tr>
+					<td>Загальна вага</td>
+					<td > <span id="Waga_one_Wax_and_AromaM" > </span></td>
+					<td id="Waga_x_Wax_and_AromaM"></td>
+				</tr>
+
+				<tr>
+					<td>Вага воску</td>
+					<td id="Waga_only_Wax"></td>
+					<td id="Waga_x_Wax" ></td>
+				</tr>
+
+				<tr>
+					<td>Вага аромомасла</td>
+					<td id="Waga_only_AromaM"></td>
+					<td id="Waga_x_AromaM"></td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+
+	<script src="JSbibliotek/jquery-3.7.1.min.js"></script>
+	<script src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+*{
+
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	
+	width: 100%;
+	background-color: wheat;
+}
+
+
+.header{
+	width: 100%;
+	height: auto;
+
+	text-align: center;
+	
+	background-color: #ddc8ff ;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+
+.header__container{
+	width: 100%;
+
+
+}
+
+
+.header__box{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.header__Watter__g{
+	padding: 5px;
+	margin-left: 10px;
+}
+
+.header__Wax__g{
+	padding: 5px;
+	margin-left: 100px;
+}
+
+
+#Wax__g{
+	color: gray;
+}
+
+.header__Watter__to__Wax__calc{
+	width: 150px;
+	padding: 5px;
+	margin: auto;
+}
+
+
+/*-----------------------------------------------------------*/
+
+.main{
+	margin-bottom: 10px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	
+	background-color: #ddc8ff ;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+
+.main__container{
+	width: 100%;
+}
+
+.main__box{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.main__form__container{
+	display: flex;
+	justify-content: center;
+}
+
+.main__Wax__w__AromaM{
+	width: 350px;
+	padding: 5px;
+	margin-left: 10px;
+}
+
+.main__Prozent__AromaM{
+	width: 350px;
+	padding: 5px;
+	margin-left: 10px;
+}
+
+
+.main__Wax__and__AromaM__calc{
+	width: 150px;
+	padding: 5px;
+	margin: auto;
+
+}
+
+.main__result{
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.main__result__clear__AromaM{
+	
+	padding: 5px;
+	margin-left: 10px;
+}
+
+.main__result__clear__AromaM span{
+
+	vertical-align: middle;
+	font-size: larger;
+	height: 70px;
+	line-height: 60px;
+}
+
+
+
+.main__result__clear__Wax__without__AromaM{
+	
+	padding: 5px;
+	margin-left: 10px;
+}
+
+
+.main__result__clear__Wax__without__AromaM span{
+	
+	vertical-align: middle;
+	line-height: 60px;
+	height: 70px;
+	font-size: larger;
+
+}
+
+
+.main__info{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#main__info__table{
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
+
+#main__info__table td{
+	width: 350px;
+	height: 50px;
+	border: 1px black solid;
+	font-weight: bold;
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+.footer{
+	text-align: center;
+}
+
+.footer__container{
+	display: flex;
+	justify-content: center;
+}
+
+.footer__count{
+	width: 400px;
+
+}
+
+
+
+.footer__calc__info{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+#footer__info__table{
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+#footer__info__table td{
+	width: 350px;
+	height: 50px;
+	border: 1px black solid;
+	font-weight: bold;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+	label{
+		font-size: 15px;
+	}
+ }
+
+
+
+
